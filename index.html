@@ -1,0 +1,287 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Imboni helps communities plan volunteering, environmental activities, and local initiatives."
+    />
+    <meta name="theme-color" content="#293b2b" />
+    <title>Imboni | Community Action Planner</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body class="min-h-screen bg-[#F5F5EC] text-[#293B2B]">
+    <header class="sticky top-0 z-20 border-b border-[#E1E6DA] bg-[#F5F5EC]/95 backdrop-blur">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
+        <a href="#home" class="flex shrink-0 items-center gap-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#293B2B] text-xl text-white" aria-hidden="true">✳</span>
+          <span>
+            <span class="block text-xl font-extrabold tracking-tight">Imboni</span>
+            <span class="hidden text-xs text-[#687665] sm:block">Community Action Planner</span>
+          </span>
+        </a>
+
+        <div class="flex items-center gap-4 sm:gap-6">
+          <a href="#home" class="rounded-md text-sm font-semibold hover:text-[#64804C] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">Home</a>
+          <a href="#about" class="hidden rounded-md text-sm font-semibold hover:text-[#64804C] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42] sm:inline">About</a>
+          <a href="#planner" class="rounded-full bg-[#293B2B] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#405A3D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">Activities</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home page banner -->
+      <section id="home" class="px-4 pb-10 pt-6 sm:px-6 sm:pb-16 sm:pt-10 lg:px-8">
+        <div class="relative mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] bg-[#293B2B] text-white shadow-xl lg:grid-cols-2">
+          <div class="relative z-10 flex flex-col items-start justify-center p-6 sm:p-10 lg:p-14">
+            <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#DCE8CE]">
+              <span class="h-2 w-2 rounded-full bg-[#D99A42]"></span>
+              Small actions. Lasting impact.
+            </span>
+
+            <h1 class="max-w-xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+              Together, we make a <span class="text-[#C6D7A9]">difference.</span>
+            </h1>
+
+            <p class="mt-5 max-w-lg text-base leading-7 text-[#E1E8DA] sm:text-lg">
+              Great communities grow when people take action. Plan neighborhood cleanups,
+              support local families, and turn good ideas into meaningful change.
+            </p>
+
+            <a
+              href="#planner"
+              class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#D9E5C5] px-6 py-3.5 font-bold text-[#293B2B] transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]"
+            >
+              Explore activities
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <p class="mt-5 text-sm text-[#C7D3C0]">Your community. Your ideas. Your impact.</p>
+          </div>
+
+          <!-- Decorative community illustration -->
+          <div class="relative flex min-h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-[#536E48] via-[#789064] to-[#C4D2A9] p-8 sm:min-h-80 lg:min-h-[490px]" aria-hidden="true">
+            <div class="absolute -right-12 -top-12 h-56 w-56 rounded-full border-[35px] border-white/10"></div>
+            <div class="absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-[#D9E5C5]/20"></div>
+
+            <svg viewBox="0 0 420 340" class="relative w-full max-w-md drop-shadow-lg" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="210" cy="304" rx="166" ry="18" fill="#293B2B" fill-opacity=".2"/>
+              <path d="M47 286C80 256 105 270 137 253C173 234 195 260 225 248C265 231 290 258 325 241C351 228 370 240 389 226V304H47V286Z" fill="#DCE8CE"/>
+              <path d="M96 265V167" stroke="#654C37" stroke-width="12" stroke-linecap="round"/>
+              <circle cx="96" cy="133" r="54" fill="#DCE8CE"/>
+              <circle cx="66" cy="157" r="34" fill="#B7CC9C"/>
+              <circle cx="126" cy="157" r="36" fill="#A4BE87"/>
+              <path d="M96 199V263" stroke="#654C37" stroke-width="12" stroke-linecap="round"/>
+              <path d="M90 244C73 224 66 208 68 192C86 202 96 218 90 244Z" fill="#65834F"/>
+              <path d="M101 226C117 207 132 202 146 205C133 224 119 232 101 226Z" fill="#65834F"/>
+              <circle cx="225" cy="155" r="29" fill="#D99A42"/>
+              <path d="M197 151C198 119 252 116 254 151L249 167H203L197 151Z" fill="#293B2B"/>
+              <path d="M199 184C202 172 213 168 225 168C239 168 250 174 253 187L266 250H184L199 184Z" fill="#F5F5EC"/>
+              <path d="M205 188L181 220L164 213" stroke="#D99A42" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M246 188L270 213L290 201" stroke="#D99A42" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M202 247L196 287" stroke="#293B2B" stroke-width="17" stroke-linecap="round"/>
+              <path d="M246 247L254 287" stroke="#293B2B" stroke-width="17" stroke-linecap="round"/>
+              <path d="M188 289H206" stroke="#F5F5EC" stroke-width="10" stroke-linecap="round"/>
+              <path d="M246 289H263" stroke="#F5F5EC" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="313" cy="181" r="25" fill="#C58B66"/>
+              <path d="M288 180C286 146 339 142 339 180L332 189H294L288 180Z" fill="#293B2B"/>
+              <path d="M291 208C297 198 304 195 313 195C323 195 332 201 336 211L349 255H278L291 208Z" fill="#DCE8CE"/>
+              <path d="M294 214L276 239" stroke="#C58B66" stroke-width="12" stroke-linecap="round"/>
+              <path d="M329 214L347 232" stroke="#C58B66" stroke-width="12" stroke-linecap="round"/>
+              <path d="M295 253L292 284" stroke="#293B2B" stroke-width="14" stroke-linecap="round"/>
+              <path d="M333 253L338 284" stroke="#293B2B" stroke-width="14" stroke-linecap="round"/>
+              <path d="M270 232L298 224L307 242L281 249Z" fill="#D99A42"/>
+              <path d="M281 224L289 243" stroke="#293B2B" stroke-width="3"/>
+              <path d="M357 112C342 95 349 78 370 70C386 90 380 107 357 112Z" fill="#DCE8CE"/>
+              <path d="M357 112L372 86" stroke="#65834F" stroke-width="3" stroke-linecap="round"/>
+              <path d="M64 90C42 80 43 59 62 49C80 66 79 83 64 90Z" fill="#D99A42"/>
+              <path d="M64 90L61 65" stroke="#293B2B" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+
+            <div class="absolute bottom-5 left-5 rounded-2xl border border-white/40 bg-white/90 px-4 py-3 text-[#293B2B] shadow-lg sm:bottom-8 sm:left-8">
+              <p class="text-xs font-medium text-[#687665]">The power of community</p>
+              <p class="mt-1 font-extrabold">Starts with one action.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About and category cards -->
+      <section id="about" class="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
+        <div class="mb-7 max-w-2xl">
+          <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#71875B]">What we can do together</p>
+          <h2 class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Small actions. Stronger communities.</h2>
+          <p class="mt-3 leading-7 text-[#687665]">
+            Use Imboni to organize the activities that make your neighborhood a better place to live.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-[#E1E6DA] bg-white p-5 transition hover:-translate-y-1 hover:shadow-md">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#E7EFDD] text-2xl" aria-hidden="true">🌱</span>
+            <h3 class="mt-4 font-bold">Environment</h3>
+            <p class="mt-2 text-sm leading-6 text-[#687665]">Cleanups, tree planting, and protecting green spaces.</p>
+          </article>
+          <article class="rounded-2xl border border-[#E1E6DA] bg-white p-5 transition hover:-translate-y-1 hover:shadow-md">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F8E9CC] text-2xl" aria-hidden="true">📚</span>
+            <h3 class="mt-4 font-bold">Education</h3>
+            <p class="mt-2 text-sm leading-6 text-[#687665]">Reading clubs, tutoring, and sharing useful skills.</p>
+          </article>
+          <article class="rounded-2xl border border-[#E1E6DA] bg-white p-5 transition hover:-translate-y-1 hover:shadow-md">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F8E1DC] text-2xl" aria-hidden="true">💚</span>
+            <h3 class="mt-4 font-bold">Health</h3>
+            <p class="mt-2 text-sm leading-6 text-[#687665]">Wellness awareness and activities that support healthy living.</p>
+          </article>
+          <article class="rounded-2xl border border-[#E1E6DA] bg-white p-5 transition hover:-translate-y-1 hover:shadow-md">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#E3E9F5] text-2xl" aria-hidden="true">🤝</span>
+            <h3 class="mt-4 font-bold">Community Support</h3>
+            <p class="mt-2 text-sm leading-6 text-[#687665]">Volunteering, donations, and helping local families.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Interactive task planner -->
+      <section id="planner" class="scroll-mt-24 border-y border-[#E1E6DA] bg-[#EBEDE2] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#71875B]">Turn ideas into action</p>
+              <h2 class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Community activity planner</h2>
+              <p class="mt-3 max-w-xl leading-7 text-[#687665]">Plan your next activity, set its priority, and keep track of what still needs to be done.</p>
+            </div>
+            <div class="rounded-2xl border border-[#D9E0D0] bg-white px-5 py-4">
+              <p class="text-xs font-semibold uppercase tracking-wider text-[#687665]">Your progress</p>
+              <p id="progress-summary" class="mt-1 text-lg font-extrabold">0 of 0 completed</p>
+              <div
+                class="mt-3 h-2 w-full overflow-hidden rounded-full bg-[#E1E6DA]"
+                role="progressbar"
+                aria-label="Completed activities"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+                id="progress-track"
+              >
+                <div id="progress-bar" class="h-full w-0 rounded-full bg-[#64804C] transition-all"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <!-- Add activity form -->
+            <section class="rounded-2xl border border-[#E1E6DA] bg-white p-5 shadow-sm sm:p-7" aria-labelledby="form-heading">
+              <h3 id="form-heading" class="text-xl font-extrabold">Plan a new activity</h3>
+              <p class="mt-2 text-sm leading-6 text-[#687665]">Every positive change starts with a plan.</p>
+
+              <form id="task-form" class="mt-6 space-y-5" novalidate>
+                <div>
+                  <label for="task-input" class="mb-2 block text-sm font-bold">Activity name</label>
+                  <input
+                    id="task-input"
+                    name="task"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="e.g. Organize a neighborhood cleanup"
+                    aria-describedby="form-error character-help"
+                    class="w-full rounded-xl border border-[#D5DDCE] bg-[#FCFCF8] px-4 py-3 text-base text-[#293B2B] outline-none transition placeholder:text-[#929C8D] focus:border-[#64804C] focus:ring-2 focus:ring-[#64804C]/25"
+                  />
+                  <div class="mt-2 flex justify-between gap-2 text-xs text-[#687665]">
+                    <span id="character-help">Maximum 100 characters</span>
+                    <span id="character-count">0 / 100</span>
+                  </div>
+                  <p id="form-error" class="mt-2 hidden text-sm font-semibold text-red-700" role="alert"></p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label for="task-category" class="mb-2 block text-sm font-bold">Category</label>
+                    <select id="task-category" name="category" class="w-full rounded-xl border border-[#D5DDCE] bg-white px-3 py-3 text-sm outline-none focus:border-[#64804C] focus:ring-2 focus:ring-[#64804C]/25">
+                      <option value="Environment">Environment</option>
+                      <option value="Education">Education</option>
+                      <option value="Health">Health</option>
+                      <option value="Community Support">Community Support</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="task-priority" class="mb-2 block text-sm font-bold">Priority</label>
+                    <select id="task-priority" name="priority" class="w-full rounded-xl border border-[#D5DDCE] bg-white px-3 py-3 text-sm outline-none focus:border-[#64804C] focus:ring-2 focus:ring-[#64804C]/25">
+                      <option value="high">High</option>
+                      <option value="medium" selected>Medium</option>
+                      <option value="low">Low</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="task-due-date" class="mb-2 block text-sm font-bold">Due date <span class="font-normal text-[#687665]">(optional)</span></label>
+                  <input id="task-due-date" name="dueDate" type="date" class="w-full rounded-xl border border-[#D5DDCE] bg-white px-4 py-3 text-sm outline-none focus:border-[#64804C] focus:ring-2 focus:ring-[#64804C]/25" />
+                </div>
+
+                <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-xl bg-[#293B2B] px-5 py-3.5 font-bold text-white transition hover:bg-[#405A3D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">
+                  <span aria-hidden="true">+</span> Add community activity
+                </button>
+              </form>
+            </section>
+
+            <!-- Activity list -->
+            <section class="min-w-0 rounded-2xl border border-[#E1E6DA] bg-white p-5 shadow-sm sm:p-7" aria-labelledby="list-heading">
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 id="list-heading" class="text-xl font-extrabold">Your activities</h3>
+                  <p id="task-count" class="mt-1 text-sm text-[#687665]" aria-live="polite">0 tasks left</p>
+                </div>
+                <button id="clear-completed" type="button" disabled class="self-start rounded-lg px-3 py-2 text-sm font-semibold text-[#687665] underline decoration-[#A3B18A] underline-offset-4 transition hover:text-red-700 disabled:cursor-not-allowed disabled:opacity-40 sm:self-auto">
+                  Clear completed
+                </button>
+              </div>
+
+              <div class="mt-5 flex flex-wrap gap-2" id="filter-controls" aria-label="Filter activities">
+                <button type="button" data-filter="all" aria-pressed="true" class="filter-button rounded-full bg-[#293B2B] px-4 py-2 text-sm font-bold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99A42]">All</button>
+                <button type="button" data-filter="active" aria-pressed="false" class="filter-button rounded-full bg-[#F1F3EB] px-4 py-2 text-sm font-bold text-[#526052] hover:bg-[#E1E8D8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99A42]">Active</button>
+                <button type="button" data-filter="completed" aria-pressed="false" class="filter-button rounded-full bg-[#F1F3EB] px-4 py-2 text-sm font-bold text-[#526052] hover:bg-[#E1E8D8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99A42]">Completed</button>
+              </div>
+
+              <div class="mt-4">
+                <label for="category-filter" class="mb-2 block text-sm font-semibold">Filter by category</label>
+                <select id="category-filter" class="w-full rounded-xl border border-[#D5DDCE] bg-white px-3 py-2.5 text-sm outline-none focus:border-[#64804C] focus:ring-2 focus:ring-[#64804C]/25">
+                  <option value="all">All categories</option>
+                  <option value="Environment">Environment</option>
+                  <option value="Education">Education</option>
+                  <option value="Health">Health</option>
+                  <option value="Community Support">Community Support</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-[#687665]">Sorted by priority</p>
+                <span class="text-xs text-[#687665]">High → Low</span>
+              </div>
+
+              <ul id="task-list" class="mt-3 space-y-3" aria-label="Community activities"></ul>
+
+              <div id="empty-state" class="mt-4 rounded-2xl border border-dashed border-[#CCD6C4] bg-[#FAFBF6] px-5 py-10 text-center">
+                <span class="text-4xl" aria-hidden="true">🌿</span>
+                <h4 id="empty-title" class="mt-3 font-extrabold">Your community journey starts here</h4>
+                <p id="empty-message" class="mx-auto mt-2 max-w-xs text-sm leading-6 text-[#687665]">Add your first activity and start making a positive difference.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#293B2B] px-4 py-8 text-center text-white sm:px-6">
+      <a href="#home" class="inline-block rounded-md text-lg font-extrabold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">Imboni</a>
+      <p class="mt-2 text-sm text-[#DCE8CE]">Small actions. Stronger communities. A better tomorrow.</p>
+      <p class="mt-4 text-xs text-[#C7D3C0]">Community Action Planner · Built with HTML, Tailwind CSS, and JavaScript.</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

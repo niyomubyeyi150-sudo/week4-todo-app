@@ -617,6 +617,54 @@ function registerEvents() {
   taskList.addEventListener('keydown', handleTaskKeydown)
 }
 
+// responsiveness button popout
+function setupMobileMenu() {
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const openIcon = document.getElementById("menu-open-icon");
+  const closeIcon = document.getElementById("menu-close-icon");
+
+  if (!menuToggle || !mobileMenu) return;
+
+  function closeMenu() {
+    mobileMenu.classList.add("hidden");
+    openIcon?.classList.remove("hidden");
+    closeIcon?.classList.add("hidden");
+
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+  }
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = !mobileMenu.classList.contains("hidden");
+
+    if (isOpen) {
+      closeMenu();
+    } else {
+      mobileMenu.classList.remove("hidden");
+      openIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("hidden");
+
+      menuToggle.setAttribute("aria-expanded", "true");
+      menuToggle.setAttribute("aria-label", "Close navigation menu");
+    }
+  });
+
+  // Close the menu after clicking a navigation link.
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Close the menu when switching to desktop size.
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      closeMenu();
+    }
+  });
+}
+
+setupMobileMenu();
+
 // Restore saved filters and show the initial interface.
 function init() {
   categoryFilter.value = currentCategory

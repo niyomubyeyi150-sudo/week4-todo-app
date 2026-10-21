@@ -13,25 +13,107 @@
   </head>
 
   <body class="min-h-screen bg-[#F5F5EC] text-[#293B2B]">
-    <header class="sticky top-0 z-20 border-b border-[#E1E6DA] bg-[#F5F5EC]/95 backdrop-blur">
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
-        aria-label="Main navigation">
-        <a href="#home" class="flex shrink-0 items-center gap-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">
-          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#293B2B] text-xl text-white" aria-hidden="true">✳</span>
-          <span>
-            <span class="block text-xl font-extrabold tracking-tight">Imboni</span>
-            <span class="hidden text-xs text-[#687665] sm:block">Community Action Planner</span>
-          </span>
+    <header class="sticky top-0 z-50 bg-[#293B2B] text-white shadow-md">
+    <nav
+      class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+      aria-label="Main navigation"
+    >
+      <!-- Logo -->
+      <a href="#home" class="text-2xl font-bold tracking-wide">
+        Imboni<span class="text-[#D99A42]">.</span>
+      </a>
+
+      <!-- Desktop navigation -->
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#home" class="transition hover:text-[#D99A42]">
+          Home
         </a>
 
-        <div class="flex items-center gap-4 sm:gap-6">
-          <a href="#home" class="rounded-md text-sm font-semibold hover:text-[#64804C] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">Home</a>
-          <a href="#about" class="hidden rounded-md text-sm font-semibold hover:text-[#64804C] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42] sm:inline">About</a>
-          <a href="#planner" class="rounded-full bg-[#293B2B] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#405A3D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D99A42]">Activities</a>
-        </div>
-      </nav>
-    </header>
+        <a href="#about" class="transition hover:text-[#D99A42]">
+          About
+        </a>
+
+        <a href="#planner" class="transition hover:text-[#D99A42]">
+          Activities
+        </a>
+      </div>
+
+      <!-- Hamburger button for mobile -->
+      <button
+        id="menu-toggle"
+        type="button"
+        class="inline-flex items-center justify-center rounded-lg p-2 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#D99A42] md:hidden"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <!-- Hamburger icon -->
+        <svg
+          id="menu-open-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <!-- Close icon -->
+        <svg
+          id="menu-close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hidden h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 6l12 12M18 6L6 18"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile navigation -->
+    <div
+      id="mobile-menu"
+      class="hidden border-t border-white/15 px-4 pb-4 pt-2 md:hidden"
+    >
+      <div class="flex flex-col gap-1">
+        <a
+          href="#home"
+          class="rounded-lg px-4 py-3 hover:bg-white/10 hover:text-[#D99A42]"
+        >
+          Home
+        </a>
+
+        <a
+          href="#about"
+          class="rounded-lg px-4 py-3 hover:bg-white/10 hover:text-[#D99A42]"
+        >
+          About
+        </a>
+
+        <a
+          href="#planner"
+          class="rounded-lg px-4 py-3 hover:bg-white/10 hover:text-[#D99A42]"
+        >
+          Planner
+        </a>
+      </div>
+    </div>
+  </header>
 
     <main>
    
